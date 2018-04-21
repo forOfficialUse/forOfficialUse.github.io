@@ -1,0 +1,70 @@
+<!--time to learn html babyyyy!! -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+								   
+	<title>Bianca's Website</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- FONT AWESOME -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	
+	<!-- STYLE NOTES -->
+	<!-- the 'div' contains the list of links (i.e., the menu) -->
+	<!-- the 'class' used to style that 'div' is called 'stuffing' -->
+	<!-- 'classes' start with a "." period -->
+	<!-- 'id' would start with a '#' hashtag -->
+	<!-- I didn't use any id's -->
+	<!-- 'stuffing' class puts the div in a fixed position, 60px from the left edge and 20% from the top -->
+	<!-- '.stuffing h2' --- changes the style of h2 text only within the div given that class -->
+	<!-- '.stuffing h2 a' --- only styles h2 text that act as a link, and only in the div with that class name -->
+	
+	<style>
+		
+		.maintitle { font-family: monospace; font-size: 152px; color: #ccc; opacity: 0.7; position:fixed; left:60px; bottom:20px }
+		
+		.topicon { position:fixed; top:0px; right:30px; color:#ccc; opacity:0.7; font-size:96px }
+		
+		.topicon:hover { color:#ffc04c }
+		.topicon:active { color:#f6fdbc }
+		
+		.stuffing { position:fixed; left:60px; top:20% }
+		
+		.stuffing h2 { font-family:monospace; font-size:60px; color:black; font-weight:300; opacity:0.7; margin:0 }
+		
+		.stuffing h2 a { color:black; text-decoration:none }
+		.stuffing h2 a:hover { color:#bbb; text-decoration:underline }
+		.stuffing h2 a:active { color:orange; text-decoration:underline }
+		
+		@media screen and (max-width:980px) { .maintitle { font-size: 128px; position:fixed; left:30px; bottom:15px } .stuffing { left:30px } h2 { font-size:48px } }
+		
+		@media screen and (max-width:480px) { .maintitle { font-size: 72px; position:fixed; left:15px; bottom:10px } .stuffing { left:15px; top:25% } .stuffing h2 { font-size:36px } .topicon { top:0px; right:15px; color:#ccc; font-size:60px } }
+		
+	</style>
+
+</head>
+
+<body>
+
+	<a class="topicon" href="index.html"><i class="fas fa-bars"></i></a>
+	
+	<span class="maintitle">bianca</span>
+	
+	<!-- 'stuffing' puts the div in a fixed position, 60px from the left edge and 20% from the top -->
+	<div class="stuffing">
+		
+		<h2><a href="me.html">about me</a></h2>
+		<h2><a href="dog.html">my interests</a></h2>
+		<h2><a href="ref.html">refugee journalism</a></h2>
+		<h2><a href="https://palyvoice.com/author/bialshamari17/">portfolio</a></h2>
+		<h2><a href="http://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/">donate to save the bees</a></h2>
+		
+	</div>
+	
+</body>
+
+</html>

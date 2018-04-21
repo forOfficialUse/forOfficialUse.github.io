@@ -1,0 +1,60 @@
+<!--time to learn html babyyyy!! -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<!-- I did not use BOOTSTRAP, so it is not included here -->
+								   
+	<title>Bianca's Website</title>
+	
+	<!-- the "meta" phrase enables the page to look good on a cellphone screen; otherwise it would look distant, with small fonts -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+								 	
+	<!-- FONT AWESOME is a font that is composed of icons instead of letters; they can be styled -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	
+	<!-- STYLES are listed here, but can instead be grouped into a separate CSS file -->
+	<!-- the background image is 100% wide, and 100vh tall (i.e., 100% of the vertical height = 100vh) -->
+	<!-- by using 100% and 100vh, the image will change size as the browser window changes size; drag it and see -->
+	<!-- the main title is in a FIXED position, always 60px from the left edge, and 20px from the bottom -->
+	<!-- resie the window and the main title stays 'fixed' to that position -->
+	<!-- the top icon is a FONT AWESOME icon; it is also in a FIXED position -->
+	<!-- "hover" and "active" pseudo-classes turn the icon into a button -->
+	<!-- MEDIA QUERIES 'ask' what size the screen is; '980px' = tablet; '480px' = mobile phone -->
+	<!-- for those two screen sizes, adjustments are made to the styling --> 
+
+	<style>
+
+		body { background:url(IMG_6137.JPG); background-size: 100% 100vh; background-repeat: no-repeat; }
+		
+		.maintitle { font-family: monospace; font-size: 152px; color: #ccc; opacity: 0.9; position:fixed; left:60px; bottom: 20px }
+		
+		.topicon { position:fixed; top:0px; right:30px; color:#ccc; opacity:0.7; font-size:96px }
+		
+		.topicon:hover { color:#f8c6a1 }
+		.topicon:active { color:#f6fdbc }
+		
+		@media screen and (max-width:980px) { .maintitle { font-size: 128px; position:fixed; left:30px; bottom:15px } }
+		
+		@media screen and (max-width:480px) { .maintitle { font-size: 72px; position:fixed; left:15px; bottom:10px } .topicon { top:0px; right:15px; color:#ccc; font-size:60px } }
+		
+	</style>
+
+</head>
+
+<body>
+	
+	<!-- the full-screen image is actually embedded in the background; see the details in <style> -->
+	
+	<!-- the menu icon -->
+	<a class="topicon" href="about.html"><i class="fas fa-bars"></i></a>
+	
+	<!-- the main title -->
+	<span class="maintitle">bianca</span>
+	
+</body>
+
+</html>
